@@ -135,6 +135,8 @@
           set: function (newValue) {
             console.log('set')
             value = newValue
+            counterEl.textContent = data.counter
+            stepEl.textContent = data.step
             queue.forEach((fn) => fn())
           },
         })
